@@ -1,3 +1,19 @@
+:root {
+  --bg: #fbf6f8;
+  --text: #2f2b52;
+  --accent: #7b57b5;
+  --accent-dark: #634496;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -8,29 +24,41 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f8f9fa;
+background-color: color-mix(in srgb, var(--accent) 10%, var(--bg));
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #4f71cd;
+  color: var(--text);
   font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
 }
 
 .logo {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 1.25rem;                    
-  font-weight: 800;                      
-  letter-spacing: -0.04em;               
-  text-decoration: none;                 
-  color: #1f3f83;                       
-  display: inline-flex;                 
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: var(--text);
+  display: inline-flex;
   align-items: center;
-  transition: opacity 0.2s ease;
 }
 
 .git {
   text-decoration: none;
-  color: #4f71cd;
+  color: white;
+  background-color: var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
   font-weight: bold;
+}
+
+.git:hover {
+  background-color: var(--accent-dark);
 }

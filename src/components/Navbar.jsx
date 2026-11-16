@@ -11,7 +11,7 @@ export default function Navbar() {
         <a href="#contact">Contact</a>
       </div>
     </nav>
-    <a className="git" href="https://github.com/Kallina-source">GitHub</a>
+    <a className="git" href="https://github.com/Kallina-source">Visit GitHub</a>
     </header>
   );
 }
