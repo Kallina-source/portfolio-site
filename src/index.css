@@ -17,6 +17,20 @@ header {
   font-weight: bold;
 }
 
-.header a {
+.logo {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1.25rem;                    
+  font-weight: 800;                      
+  letter-spacing: -0.04em;               
+  text-decoration: none;                 
+  color: #1f3f83;                       
+  display: inline-flex;                 
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
 
+.git {
+  text-decoration: none;
+  color: #4f71cd;
+  font-weight: bold;
 }
