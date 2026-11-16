@@ -62,3 +62,23 @@ background-color: color-mix(in srgb, var(--accent) 10%, var(--bg));
 .git:hover {
   background-color: var(--accent-dark);
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--accent) 10%, var(--bg));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
