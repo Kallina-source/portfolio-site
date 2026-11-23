@@ -1,9 +1,13 @@
-export default function Hero() {
-    return (
-        <section id="home" className="hero">  
-        <div className="hero-photo"> Photo </div>
+import profilePic from '../assets/profile.jpg'
 
-         <div className="hero-text">
+export default function Hero() {
+  return (
+    <section id="home" className="hero">
+      <div className="hero-photo">
+        <img src={profilePic} alt="Kallina Joseph" />
+      </div>
+
+      <div className="hero-text">
         <p className="hero-hello">Hi, I'm</p>
         <h1>Kallina Joseph</h1>
         <p className="hero-tagline">Your tagline goes here.</p>
@@ -12,6 +16,6 @@ export default function Hero() {
           <a href="#contact" className="btn-outline">Contact me</a>
         </div>
       </div>
-        </section>
-    )
+    </section>
+  )
 }
