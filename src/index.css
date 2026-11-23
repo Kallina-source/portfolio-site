@@ -82,3 +82,57 @@ background-color: color-mix(in srgb, var(--accent) 10%, var(--bg));
   align-items: center;
   justify-content: center;
 }
+
+.hero-hello {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0.25rem 0 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  max-width: 30rem;
+  margin: 0 0 2rem;
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: var(--accent);
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-dark);
+}
+
+.btn-outline {
+  text-decoration: none;
+  color: var(--text);
+  border: 1.5px solid var(--accent);
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: white;
+}
